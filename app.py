@@ -9,8 +9,8 @@ app=Flask(__name__)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = '465'
-app.config['MAIL_USERNAME'] = 'vivekspisal235@gmail.com'
-app.config['MAIL_PASSWORD'] = '9820987710'
+app.config['MAIL_USERNAME'] = '******gmail.com'
+app.config['MAIL_PASSWORD'] = '*******'
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
@@ -41,8 +41,8 @@ def sendmail():
 		name=request.form['name']
 		review=request.form['review']
 		mail.send_message(name,
-			sender ='vivekspisal235@gmail.com',
-			recipients = ['codingthunder23@gmail.com'],
+			sender =''*******'@gmail.com',
+			recipients = [''*******'@gmail.com'],
 			body=review)
 		return render_template('confirm_review.html')
 	else:
